@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: ankane/pgvector:v0.5.1
+    container_name: meal-optimizer-db
+    environment:
+      POSTGRES_USER: meal_user
+      POSTGRES_PASSWORD: meal_password123!
+      POSTGRES_DB: meal_db
+      TZ: Asia/Seoul
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:
+    driver: local

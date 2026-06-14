@@ -1,0 +1,49 @@
+### Python 표준 제외 대상 ###
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+### 가상환경 (핵심 방어) ###
+.venv/
+venv/
+ENV/
+env/
+
+### 환경변수 및 비밀키 보안 파일 ###
+.env
+.env.local
+.env.*
+*.env
+
+### 도커 관련 가상 데이터 및 로그 ###
+.docker/
+*.log
+
+### OS 및 툴 설정 파일 ###
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
